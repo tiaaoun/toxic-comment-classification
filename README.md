@@ -2,7 +2,9 @@
 
 A Natural Language Processing (NLP) project that detects and classifies toxic online comments using both traditional machine learning and deep learning techniques.
 
-This project compares the performance of Logistic Regression, Linear SVM, LSTM, and Bidirectional LSTM (BiLSTM) models on the Jigsaw Toxic Comment Classification dataset to evaluate their effectiveness in toxicity detection.
+This project compares the performance of Logistic Regression, Linear SVM, LSTM, and Bidirectional LSTM (BiLSTM) models using the Jigsaw Toxic Comment Classification dataset to evaluate different approaches for toxicity detection.
+
+> This project was completed as part of the **CSC464 – Deep Learning & Natural Language Processing** course at the **Lebanese American University (LAU)**.
 
 ---
 
@@ -17,13 +19,13 @@ This project compares the performance of Logistic Regression, Linear SVM, LSTM, 
 - Linear Support Vector Machine (SVM)
 - Long Short-Term Memory (LSTM)
 - Bidirectional LSTM (BiLSTM)
-- Performance evaluation using Accuracy, Precision, Recall, F1-score, Confusion Matrix, and ROC-AUC
+- Model evaluation using Accuracy, Precision, Recall, F1-score, Confusion Matrix, and ROC-AUC
 
 ---
 
 ## Dataset
 
-This project uses the **Jigsaw Toxic Comment Classification Challenge** dataset available on Kaggle.
+The project uses the **Jigsaw Toxic Comment Classification Challenge** dataset from Kaggle.
 
 The original multi-label dataset was converted into three mutually exclusive classes:
 
@@ -48,8 +50,8 @@ The original multi-label dataset was converted into three mutually exclusive cla
 
 ## Models Implemented
 
-| Model | Approach |
-|--------|----------|
+| Model | Category |
+| ------ | -------- |
 | Logistic Regression | Machine Learning |
 | Linear SVM | Machine Learning |
 | LSTM | Deep Learning |
@@ -60,9 +62,9 @@ The original multi-label dataset was converted into three mutually exclusive cla
 ## Project Pipeline
 
 1. Data preprocessing
-2. Text cleaning
+2. Text cleaning and normalization
 3. Tokenization and lemmatization
-4. Feature engineering (TF-IDF / Embeddings)
+4. Feature engineering (TF-IDF & Word Embeddings)
 5. Model training
 6. Model evaluation
 7. Performance comparison
@@ -71,7 +73,7 @@ The original multi-label dataset was converted into three mutually exclusive cla
 
 ## Results
 
-The implemented models were compared using:
+The implemented models were evaluated using:
 
 - Accuracy
 - Precision
@@ -80,38 +82,31 @@ The implemented models were compared using:
 - Confusion Matrix
 - ROC Curve (AUC)
 
-The comparison highlights the trade-offs between traditional machine learning methods and deep learning architectures. While Linear SVM achieved the highest accuracy, the BiLSTM model demonstrated stronger contextual understanding of language, making it particularly effective for detecting complex toxic patterns.
+The comparison demonstrates the strengths and trade-offs of both traditional machine learning and deep learning approaches. Linear SVM achieved the highest overall accuracy, while the BiLSTM model provided stronger contextual understanding for toxicity detection.
 
 ---
 
 ## Repository Structure
 
-```
+```text
 .
 ├── toxicity_detection.ipynb
-├── Project_Report.pdf
+├── Toxic_Comment_Classification_Report.pdf
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
 
 ## Report
 
-A detailed report describing the methodology, preprocessing pipeline, model architectures, experiments, and evaluation is available in **Project_Report.pdf**.
+A detailed technical report describing the methodology, preprocessing pipeline, model architectures, experiments, and evaluation can be found here:
+
+📄 **[Toxic_Comment_Classification_Report.pdf](./Toxic_Comment_Classification_Report.pdf)**
 
 ---
 
-## Authors
+## License
 
-- Tia Aoun
-- Alaedine Fathallah
-- Ali Mourad
-
----
-
-## Course
-
-**CSC464 – Deep Learning & Natural Language Processing**
-
-Lebanese American University (LAU)
+This project is intended for educational and portfolio purposes.
